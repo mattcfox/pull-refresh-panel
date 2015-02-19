@@ -53,7 +53,7 @@ Ext.define('Scaljeri.plugin.PullRefreshPanel', {
 
         me.lastUpdated = new Date();
 
-        list.add(me);
+        list.insert(0,me);
 
         pullTpl.overwrite(element, {
             message: me.getPullRefreshText(),
